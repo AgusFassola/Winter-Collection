@@ -23,11 +23,10 @@
         <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
 
         <ul class="navmenu">
-            <li><a href="#">home</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">page</a></li>
-            <li><a href="#">Docs</a></li>
+            <li><a  href="#">home</a></li>
+            <li><a href="#trending">products</a></li>
+            <li><a  href="#client-reviews">Client Reviews</a></li>
+            <li><a href="#update-news">New Updates</a></li>
         </ul>
 
         <div class="nav-icon">
@@ -59,7 +58,7 @@
             <h2>Our Trending <span>products</span></h2>
         </div>
 
-        <div class="products">
+        <div class="products" id="products">
             <div class="row">
                 <img src="image/1.jpg" alt="">
                 <div class="product-text">
@@ -237,7 +236,7 @@
 
     <!-- Client-Review-section -->
 
-    <section class="client-reviews">
+    <section class="client-reviews" id="client-reviews">
         <div class="reviews">
             <h3>Client Reviews</h3>
             <img src="image/team-1.jpg" alt="">
@@ -251,7 +250,7 @@
     </section>
 
     <!-- update-news-section -->
-    <section class="Update-news">
+    <section class="Update-news" id="update-news">
         <div class="up-center-text">
             <h2>New Updates</h2>
         </div>
@@ -355,13 +354,15 @@
     <div class="end-text">
         <p>Copyright © @2022. All Rights Reserved.Designd By Saidul Islam.</p>
     </div>
-
-   
-
-
-
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="java.js"></script>
-    
+<!-- scroll failed
+<script>
+        function scrollToSection(sectionId){
+    document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+}
+</script>
+-->
+
 </body>
 </html>

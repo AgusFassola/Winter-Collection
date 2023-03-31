@@ -18,3 +18,4 @@ ScrollReveal().reveal('.row',{delay:100});
 ScrollReveal().reveal('.client-reviews',{delay:200});
 ScrollReveal().reveal('.Update-news',{delay:200});
 ScrollReveal().reveal('.contact',{delay:500});
+
