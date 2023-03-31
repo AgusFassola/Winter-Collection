@@ -12,3 +12,9 @@ menu.onclick = () => {
     navmenu.classList.toggle('open');
 }
 
+ScrollReveal().reveal('.main-home');
+ScrollReveal().reveal('.trending-product',{delay:100});
+ScrollReveal().reveal('.row',{delay:100});
+ScrollReveal().reveal('.client-reviews',{delay:200});
+ScrollReveal().reveal('.Update-news',{delay:200});
+ScrollReveal().reveal('.contact',{delay:500});

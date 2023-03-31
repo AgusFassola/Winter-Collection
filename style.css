@@ -228,6 +228,30 @@ header.sticky{
 }
 
 /* update-section-css */
+.cart{
+    display: block;
+    position: relative;
+    width: 380px;
+    height: 350px;
+}
+.cart .overlay{
+    background-color: #F3F4F6;
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out ;
+
+}
+
 .up-center-text h2{
     text-align: center;
     color: #111;
@@ -236,10 +260,36 @@ header.sticky{
     font-weight: 700;
     margin-bottom: 30px;
 }
+.cart .cart_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out os;
+
+}
+.cart:hover .cart_info{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    pointer-events: unset;
+    cursor: pointer;
+}
+.cart:hover .overlay{
+    opacity: 1;
+}
 .cart img{
     width: 380px;
-    height: auto;
+    height: 100%;
     border-radius: 5px;
+    object-position: center;
+    object-fit: cover;
 }
 .update-cart{
     display: grid;
